@@ -1,0 +1,13 @@
+$blue: #1875e7;
+$side: left;
+
+.scssBox {
+  margin: 20px 0;
+  .box {
+    color: $blue;
+    background-color: rgb(208, 56, 56);
+    border: 1px solid grey;
+    margin-#{$side}: 20px;
+    padding: (20px/2);
+  }
+}

@@ -1,0 +1,29 @@
+@color: red;
+
+.lessBox {
+  .box {
+    color: @color;
+    background-color: lightblue;
+    transform: translateX(100);
+
+    &:before {
+      @arr: "hello", "world";
+      content: ` @{arr}.join(" ") .toUpperCase() `;
+    }
+  }
+
+  .smallImg {
+    width: 69px;
+    height: 75px;
+    background: url("@/assets/imgs/2.png") no-repeat;
+  }
+  .bigImg {
+    width: 402px;
+    height: 154px;
+    background: url("@/assets/imgs/1.jpeg") no-repeat;
+    background-size: cover;
+  }
+  .icons {
+    width: 50px;
+  }
+}

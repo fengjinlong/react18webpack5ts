@@ -15,5 +15,13 @@
   <body>
     <!-- 容器节点 -->
     <div id="root"></div>
+    <% for (var i in htmlWebpackPlugin.options.files &&
+    htmlWebpackPlugin.options.files.js) { %>
+    <script
+      type="text/javascript"
+      crossorigin
+      src="<%= htmlWebpackPlugin.options.files.js[i] %>"
+    ></script>
+    <% } %>
   </body>
 </html>
